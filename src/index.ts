@@ -5,7 +5,9 @@ import { saveJobs } from "./lib/drizzle";
 import { getLinkedinCompanyJobs } from "./utils/get-linkedin-company-by-id";
 
 // TODO: add X-Team page
-// TODO: deploy on https://render.com (0.016¢ / min)
+// TODO: deploy on https://render.com
+// TODO: configure a cron job
+// TODO: build the frontend
 
 export type Job = {
 	title: string;

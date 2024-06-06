@@ -8,10 +8,10 @@ export async function getLinkedinCompanyJobs(page: Page, companyId: string) {
 
 	try {
 		await page.waitForSelector(".jobs-search__results-list", {
-			timeout: 5000,
+			timeout: 7000,
 		});
 	} catch {
-		console.warn("No jobs found at company: ", companyId);
+		console.warn("No jobs found at company:", companyId);
 		return [];
 	}
 
